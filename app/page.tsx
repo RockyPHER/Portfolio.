@@ -23,22 +23,22 @@ export default function Home() {
       </div>
       {/* pagination buttons */}
       <div className="w-[220px] h-[110px] absolute top-0 z-20 flex justify-center group/main">
-        <div className="w-auto h-auto absolute z-10 px-5 py-2 flex justify-evenly gap-5 -translate-y-20 group-hover/main:translate-y-5 transition-all bg-gray-200 rounded-full">
+        <div className="w-auto h-auto absolute z-10 px-5 py-2 flex justify-evenly gap-5 -translate-y-20 group-hover/main:translate-y-5 transition-all">
           <button className="group/button1">
-            <Circle className="w-10 h-10 group/button1-active:fill-gray-600 group-hover/button1:fill-gray-400" />
+            <Circle className="w-10 h-10 group-active/button1:fill-gray-800 group-hover/button1:fill-gray-500" />
           </button>
           <button className="group/button2">
-            <Circle className="w-10 h-10 group/button2-active:fill-gray-600 group-hover/button2:fill-gray-400" />
+            <Circle className="w-10 h-10 group-active/button2:fill-gray-800 group-hover/button2:fill-gray-500" />
           </button>
           <button className="group/button3">
-            <Circle className="w-10 h-10 group/button3-active:fill-gray-600 group-hover/button3:fill-gray-400" />
+            <Circle className="w-10 h-10 group-active/button3:fill-gray-800 group-hover/button3:fill-gray-500" />
           </button>
         </div>
       </div>
       {/* main container */}
       <div className="w-full h-[642px] relative flex justify-center items-center">
         <div className="w-[1280px] h-[580px] flex flex-col justify-between py-8 px-10 bg-white bg-opacity-20">
-          <span>
+          <span className="animate-onload-left">
             <h1>Davidson Amaro</h1>
             <h2>Web Developer</h2>
             <h2>UI/UX</h2>
@@ -56,7 +56,7 @@ export default function Home() {
           </ul>
         </div>
         <Image
-          className="w-[780px] absolute top-0 -right-[150px]"
+          className="w-[780px] absolute top-0 select-none animate-onload-right -right-[150px] transition-all"
           src={musashiImage}
           alt="musashi"
           width={1300}
